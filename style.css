@@ -1,0 +1,17 @@
+#grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 600px;
+  background-color: lightblue;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.grid-tile {
+  flex: auto;
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+  background-color: white;
+}
