@@ -1,14 +1,19 @@
-function makeGrid() {
+function makeGrid(gridWidth = 600, gridHeight = 600, tileSize = 20) {
   const gridContainer = document.querySelector('#grid');
-  console.log(gridContainer);
+  gridContainer.style.width = gridWidth + "px";
+  gridContainer.style.height = gridHeight + "px";
 
   const temp = document.createElement('div');
   temp.classList.add('grid-tile');
-  for(let i = 0; i < 23 * 23; i++) {
+  temp.style.width = tileSize + 'px';
+  temp.style.height = tileSize + 'px';
+  for(let i = 0; i < Math.floor(gridWidth / (tileSize + 2)) * Math.floor(gridHeight / (tileSize +
+        2)); i++) {
     gridContainer.appendChild(temp.cloneNode());
-    console.log(i);
   }
 }
 
 makeGrid();
+
+
 

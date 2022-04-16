@@ -1,17 +1,14 @@
 #grid {
   display: flex;
   flex-wrap: wrap;
-  width: 600px;
-  height: 600px;
   background-color: lightblue;
-  justify-content: space-around;
-  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow: visible;
 }
 
 .grid-tile {
-  flex: auto;
-  width: 20px;
-  height: 20px;
-  margin: 3px;
+  margin: 1px;
   background-color: white;
 }
